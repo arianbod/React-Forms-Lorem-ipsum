@@ -1,12 +1,12 @@
 import React from 'react';
-
+import { nanoid } from 'nanoid';
 const Text = ({ texts, Quantity = 1 }) => {
-	console.log(texts);
 	return (
 		<article className='lorem-text'>
-			{texts.map((item) => (
-				<p>{item}</p>
-			))}
+			{texts.map((item) => {
+				let id = nanoid();
+				return <p key={id}>{item}</p>;
+			})}
 		</article>
 	);
 };

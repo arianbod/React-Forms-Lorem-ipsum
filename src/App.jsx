@@ -11,7 +11,7 @@ const App = () => {
 		setTextsState(textData.slice(0, quantityState));
 	};
 	const handleChange = (e) => {
-		setQuantityState(e.target.value > 1 ? e.target.value : 1);
+		setQuantityState(e.target.value > 1 ? parseInt(e.target.value) : 1);
 	};
 	return (
 		<>
