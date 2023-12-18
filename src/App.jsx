@@ -1,4 +1,13 @@
+import { Text, Title, Form } from './components';
 const App = () => {
-  return <h2>Lorem Ipsum Starter</h2>;
+	return (
+		<>
+			<section className='section-center'>
+				<Title />
+				<Form />
+				<Text />
+			</section>
+		</>
+	);
 };
 export default App;
